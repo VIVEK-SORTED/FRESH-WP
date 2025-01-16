@@ -1,0 +1,28 @@
+# Ignore WordPress core files
+wp-admin/
+wp-includes/
+index.php
+license.txt
+readme.html
+wp-*.php
+
+# Ignore uploaded content
+wp-content/uploads/
+
+# Ignore specific plugins or themes (optional)
+# wp-content/plugins/plugin-to-ignore/
+# wp-content/themes/theme-to-ignore/
+
+# Ignore system files
+.DS_Store
+Thumbs.db
+*.log
+*.sql
+*.tar.gz
+*.zip
+
+# Ignore sensitive configuration
+wp-config.php
+
+# Ignore node_modules and vendor directories
+
