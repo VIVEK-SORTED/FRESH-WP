@@ -1,0 +1,224 @@
+<?php
+function custom_admin_menu() {
+    // Content Tab
+    add_menu_page(
+        'Content Settings',
+        'Content',
+        'manage_options',
+        'content-settings',
+        'content_settings_page',
+        'dashicons-media-text', // Dashicon for content
+        6
+    );
+    add_submenu_page(
+        'content-settings',
+        'Media',
+        'Media',
+        'manage_options',
+        'media',
+        'content_settings_page'
+    );
+    add_submenu_page(
+        'content-settings',
+        'Pages',
+        'Pages',
+        'manage_options',
+        'pages',
+        'content_settings_page'
+    );
+    add_submenu_page(
+        'content-settings',
+        'Articles',
+        'Articles',
+        'manage_options',
+        'articles',
+        'content_settings_page'
+    );
+    add_submenu_page(
+        'content-settings',
+        'Poll',
+        'Poll',
+        'manage_options',
+        'poll',
+        'content_settings_page'
+    );
+    add_submenu_page(
+        'content-settings',
+        'Form',
+        'Form',
+        'manage_options',
+        'form',
+        'content_settings_page'
+    );
+
+    // Marketing Tab
+    add_menu_page(
+        'Marketing Settings',
+        'Marketing',
+        'manage_options',
+        'marketing-settings',
+        'marketing_settings_page',
+        'dashicons-chart-area', // Dashicon for marketing
+        7
+    );
+    add_submenu_page(
+        'marketing-settings',
+        'Ads',
+        'Ads',
+        'manage_options',
+        'ads',
+        'marketing_settings_page'
+    );
+    add_submenu_page(
+        'marketing-settings',
+        'Analytics',
+        'Analytics',
+        'manage_options',
+        'analytics',
+        'marketing_settings_page'
+    );
+    add_submenu_page(
+        'marketing-settings',
+        'SSO',
+        'SSO',
+        'manage_options',
+        'sso',
+        'marketing_settings_page'
+    );
+    add_submenu_page(
+        'marketing-settings',
+        'Push',
+        'Push',
+        'manage_options',
+        'push',
+        'marketing_settings_page'
+    );
+    add_submenu_page(
+        'marketing-settings',
+        'Fan Manager',
+        'Fan Manager',
+        'manage_options',
+        'fan_manager',
+        'marketing_settings_page'
+    );
+    add_submenu_page(
+        'marketing-settings',
+        'Fan Deletion',
+        'Fan Deletion',
+        'manage_options',
+        'fan_deletion',
+        'marketing_settings_page'
+    );
+
+    // Admin Tab
+    add_menu_page(
+        'Admin Settings',
+        'Admin',
+        'manage_options',
+        'admin-settings',
+        'admin_settings_page',
+        'dashicons-admin-tools', // Dashicon for admin
+        8
+    );
+    add_submenu_page(
+        'admin-settings',
+        'Role Manager',
+        'Role Manager',
+        'manage_options',
+        'role_manager',
+        'admin_settings_page'
+    );
+    add_submenu_page(
+        'admin-settings',
+        'User',
+        'User',
+        'manage_options',
+        'user',
+        'admin_settings_page'
+    );
+    add_submenu_page(
+        'admin-settings',
+        'Plugins',
+        'Plugins',
+        'manage_options',
+        'plugins',
+        'admin_settings_page'
+    );
+    add_submenu_page(
+        'admin-settings',
+        'Themes',
+        'Themes',
+        'manage_options',
+        'themes',
+        'admin_settings_page'
+    );
+    add_submenu_page(
+        'admin-settings',
+        'Appearance',
+        'Appearance',
+        'manage_options',
+        'appearance',
+        'admin_settings_page'
+    );
+    add_submenu_page(
+        'admin-settings',
+        'Settings',
+        'Settings',
+        'manage_options',
+        'settings',
+        'admin_settings_page'
+    );
+    add_submenu_page(
+        'admin-settings',
+        'Tools',
+        'Tools',
+        'manage_options',
+        'tools',
+        'admin_settings_page'
+    );
+    add_submenu_page(
+        'admin-settings',
+        'Site Monitoring',
+        'Site Monitoring',
+        'manage_options',
+        'site_monitoring',
+        'admin_settings_page'
+    );
+
+    // Brand Tab
+    add_menu_page(
+        'Brand Settings',
+        'Brand',
+        'manage_options',
+        'brand-settings',
+        'brand_settings_page',
+        'dashicons-admin-customizer', // Dashicon for brand
+        9
+    );
+    add_submenu_page(
+        'brand-settings',
+        'Global Settings',
+        'Global Settings',
+        'manage_options',
+        'global_settings',
+        'brand_settings_page'
+    );
+    add_submenu_page(
+        'brand-settings',
+        'Admin Panel Settings',
+        'Admin Panel Settings',
+        'manage_options',
+        'admin_panel_settings',
+        'brand_settings_page'
+    );
+    add_submenu_page(
+        'brand-settings',
+        'App Specific Settings',
+        'App Specific Settings',
+        'manage_options',
+        'app_specific_settings',
+        'brand_settings_page'
+    );
+}
+
+add_action('admin_menu', 'custom_admin_menu');

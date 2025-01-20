@@ -303,3 +303,19 @@
     --welsh-conference-bright-red-rgb: rgb(235, 50, 45); /* RGB value for Bright Red */
 }
 
+/* Font Classes */
+.red-hat-display {
+    font-family: 'Red Hat Display', sans-serif;
+}
+
+.urc-hand {
+    font-family: 'URC Hand', sans-serif;
+}
+
+.urc-sans {
+    font-family: 'URC Sans', sans-serif;
+}
+
+.urc-united {
+    font-family: 'URC United', sans-serif;
+}
