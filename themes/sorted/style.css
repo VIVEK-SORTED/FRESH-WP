@@ -1,0 +1,305 @@
+/* RedHatDisplay Fonts */
+@font-face {
+    font-family: 'RedHatDisplay';
+    src: url('assets/Fonts/RedHatDisplay-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'RedHatDisplay';
+    src: url('assets/Fonts/RedHatDisplay-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'RedHatDisplay';
+    src: url('assets/Fonts/RedHatDisplay-Italic.ttf') format('truetype');
+    font-weight: normal;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'RedHatDisplay';
+    src: url('assets/Fonts/RedHatDisplay-BoldItalic.ttf') format('truetype');
+    font-weight: bold;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'RedHatDisplay';
+    src: url('assets/Fonts/RedHatDisplay-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'RedHatDisplay';
+    src: url('assets/Fonts/RedHatDisplay-MediumItalic.ttf') format('truetype');
+    font-weight: 500;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'RedHatDisplay';
+    src: url('assets/Fonts/RedHatDisplay-Black.ttf') format('truetype');
+    font-weight: 900;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'RedHatDisplay';
+    src: url('assets/Fonts/RedHatDisplay-BlackItalic.ttf') format('truetype');
+    font-weight: 900;
+    font-style: italic;
+}
+
+/* URC Fonts */
+@font-face {
+    font-family: 'URC-Hand';
+    src: url('assets/Fonts/URC-Hand.ttf') format('truetype'),
+         url('assets/Fonts/URC-Hand.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'URC-Sans';
+    src: url('assets/Fonts/URC-Sans.ttf') format('truetype'),
+         url('assets/Fonts/URC-Sans.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'URC-United';
+    src: url('assets/Fonts/URC-United.ttf') format('truetype'),
+         url('assets/Fonts/URC-United.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* Declare variables for DEEP SLATE color */
+:root {
+    --deep-slate-hex: #142837; /* HEX Value for DEEP SLATE */
+    --deep-slate-rgb: rgb(20, 40, 55); /* RGB Value for DEEP SLATE */
+}
+
+:root {
+    /* RED */
+    --red-hex: #FF4B5A; /* HEX Value for RED */
+    --red-rgb: rgb(255, 75, 90); /* RGB Value for RED */
+
+    /* White */
+    --white-hex: #FFFFFF; /* HEX Value */
+    --white-rgb: rgb(255, 255, 255); /* RGB Value */
+
+    /* TURQUOISE */
+    --turquoise-hex: #00CDE6; /* HEX Value for TURQUOISE */
+    --turquoise-rgb: rgb(0, 205, 230); /* RGB Value for TURQUOISE */
+
+    /* YELLOW */
+    --yellow-hex: #FFC300; /* HEX Value for YELLOW */
+    --yellow-rgb: rgb(255, 195, 0); /* RGB Value for YELLOW */
+
+    /* PURPLE */
+    --purple-hex: #8C1EE6; /* HEX Value for PURPLE */
+    --purple-rgb: rgb(140, 30, 230); /* RGB Value for PURPLE */
+
+    /* ACID GREEN */
+    --acid-green-hex: #A0FF32; /* HEX Value for ACID GREEN */
+    --acid-green-rgb: rgb(160, 255, 50); /* RGB Value for ACID GREEN */
+
+    /* DARK SLATE */
+    --dark-slate-rgb: rgb(10, 30, 45); /* RGB Value for DARK SLATE */
+    --dark-slate-hex: #0A1E2D; /* HEX Value for DARK SLATE (calculated from RGB) */
+
+    /* LIGHT SLATE */
+    --light-slate-rgb: rgb(30, 50, 65); /* RGB Value for LIGHT SLATE */
+    --light-slate-hex: #1E3241; /* HEX Value for LIGHT SLATE */
+
+     /* LIGHT TURQUOISE */
+     --light-turquoise-hex: #40D9EC; /* HEX value for LIGHT TURQUOISE */
+     --light-turquoise-rgb: rgb(64, 217, 236); /* RGB value for LIGHT TURQUOISE */
+ 
+     /* TURQUOISE TONE */
+     --turquoise-tone-hex: #D9F7FB; /* HEX value for TURQUOISE TONE */
+     --turquoise-tone-rgb: rgb(217, 247, 251); /* RGB value for TURQUOISE TONE */
+
+     /* RED TONE */
+    --red-tone-hex: #FF5F6E; /* HEX value for RED TONE */
+    --red-tone-rgb: rgb(255, 95, 110); /* RGB value for RED TONE */
+
+    /* PURPLE TONE */
+    --purple-tone-hex: #A032FA; /* HEX value for PURPLE TONE */
+    --purple-tone-rgb: rgb(160, 50, 250); /* RGB value for PURPLE TONE */
+
+    /* YELLOW TONE */
+    --yellow-tone-hex: #FFCF2C; /* HEX value for YELLOW TONE */
+    --yellow-tone-rgb: rgb(255, 207, 44); /* RGB value for YELLOW TONE */
+
+    /* ACID GREEN TONE */
+    --acid-green-tone-hex: #78F00A; /* HEX value for ACID GREEN TONE */
+    --acid-green-tone-rgb: rgb(120, 240, 10); /* RGB value for ACID GREEN TONE */
+
+     /* DHL Stormers - Primary Blue */
+     --stormers-blue-hex: #0A1E5A; /* HEX value for Primary Blue */
+     --stormers-blue-rgb: rgb(10, 30, 90); /* RGB value for Primary Blue */
+ 
+     /* DHL Stormers - Red */
+     --stormers-red-hex: #E1001E; /* HEX value for Red */
+     --stormers-red-rgb: rgb(225, 0, 30); /* RGB value for Red */
+
+     /* Cardiff Rugby - Black */
+    --cardiff-black-hex: #000000; /* HEX value for Black */
+    --cardiff-black-rgb: rgb(0, 0, 0); /* RGB value for Black */
+
+    /* Cardiff Rugby - Light Blue */
+    --cardiff-blue-hex: #6EBEFF; /* HEX value for Light Blue */
+    --cardiff-blue-rgb: rgb(110, 190, 255); /* RGB value for Light Blue */
+
+    /* Cell C Sharks - Black */
+    --cellc-sharks-black-hex: #000000; /* HEX value for Black */
+    --cellc-sharks-black-rgb: rgb(0, 0, 0); /* RGB value for Black */
+
+    /* Cell C Sharks - Gray */
+    --cellc-sharks-gray-hex: #504B50; /* HEX value for Gray */
+    --cellc-sharks-gray-rgb: rgb(140, 30, 230); /* RGB value for Gray */
+
+     /* Ulster Rugby - Black */
+     --ulster-black-hex: #000000; /* HEX value for Black */
+     --ulster-black-rgb: rgb(0, 0, 0); /* RGB value for Black */
+ 
+     /* Ulster Rugby - Red */
+     --ulster-red-hex: #E61E1E; /* HEX value for Red */
+     --ulster-red-rgb: rgb(230, 30, 30); /* RGB value for Red */
+
+      /* Benetton Rugby - Dark Green */
+    --benetton-dark-green-hex: #00321E; /* HEX value for Dark Green */
+    --benetton-dark-green-rgb: rgb(0, 50, 30); /* RGB value for Dark Green */
+
+    /* Benetton Rugby - Bright Green */
+    --benetton-bright-green-hex: #00B46E; /* HEX value for Bright Green */
+    --benetton-bright-green-rgb: rgb(0, 180, 110); /* RGB value for Bright Green */
+
+    /* Munster Rugby - Dark Blue */
+    --munster-dark-blue-hex: #001E5A; /* HEX value for Dark Blue */
+    --munster-dark-blue-rgb: rgb(0, 30, 90); /* RGB value for Dark Blue */
+
+    /* Munster Rugby - Red */
+    --munster-red-hex: #CD0A2D; /* HEX value for Red */
+    --munster-red-rgb: rgb(205, 10, 45); /* RGB value for Red */
+
+    /* Leinster Rugby - Dark Blue */
+    --leinster-dark-blue-hex: #003287; /* HEX value for Dark Blue */
+    --leinster-dark-blue-rgb: rgb(0, 50, 135); /* RGB value for Dark Blue */
+
+    /* Leinster Rugby - Light Blue */
+    --leinster-light-blue-hex: #0082FF; /* HEX value for Light Blue */
+    --leinster-light-blue-rgb: rgb(255, 180, 20); /* RGB value for Light Blue */
+
+    /* Ospreys Rugby - Black */
+    --ospreys-black-hex: #000000; /* HEX value for Black */
+    --ospreys-black-rgb: rgb(0, 0, 0); /* RGB value for Black */
+
+    /* Ospreys Rugby - Gray */
+    --ospreys-gray-hex: #5A5A64; /* HEX value for Gray */
+    --ospreys-gray-rgb: rgb(90, 90, 100); /* RGB value for Gray */
+
+    /* Glasgow Warriors - Dark Blue */
+    --glasgow-dark-blue-hex: #0A1432; /* HEX value for Dark Blue */
+    --glasgow-dark-blue-rgb: rgb(10, 20, 50); /* RGB value for Dark Blue */
+
+    /* Glasgow Warriors - Light Blue */
+    --glasgow-light-blue-hex: #5AAAF0; /* HEX value for Light Blue */
+    --glasgow-light-blue-rgb: rgb(90, 170, 240); /* RGB value for Light Blue */
+
+    /* Vodacom Bulls - Dark Blue */
+    --vodacom-dark-blue-hex: #001E6E; /* HEX value for Dark Blue */
+    --vodacom-dark-blue-rgb: rgb(0, 30, 110); /* RGB value for Dark Blue */
+
+    /* Vodacom Bulls - Light Blue */
+    --vodacom-light-blue-hex: #0082E6; /* HEX value for Light Blue */
+    --vodacom-light-blue-rgb: rgb(0, 130, 230); /* RGB value for Light Blue */
+
+    /* Emirates Lions - Dark Red */
+    --emirates-dark-red-hex: #280014; /* HEX value for Dark Red */
+    --emirates-dark-red-rgb: rgb(40, 0, 20); /* RGB value for Dark Red */
+
+    /* Emirates Lions - Bright Red */
+    --emirates-bright-red-hex: #FF1E28; /* HEX value for Bright Red */
+    --emirates-bright-red-rgb: rgb(255, 30, 40); /* RGB value for Bright Red */
+
+     /* Scarlets - Dark Red */
+     --scarlets-dark-red-hex: #460014; /* HEX value for Dark Red */
+     --scarlets-dark-red-rgb: rgb(70, 0, 20); /* RGB value for Dark Red */
+ 
+     /* Scarlets - Bright Red */
+     --scarlets-bright-red-hex: #CD0000; /* HEX value for Bright Red */
+     --scarlets-bright-red-rgb: rgb(205, 0, 0); /* RGB value for Bright Red */
+
+     /* Dragons - Dark Red */
+    --dragons-dark-red-hex: #C3001E; /* HEX value for Dark Red */
+    --dragons-dark-red-rgb: rgb(195, 0, 30); /* RGB value for Dark Red */
+
+    /* Dragons - Yellow */
+    --dragons-yellow-hex: #FFAA00; /* HEX value for Yellow */
+    --dragons-yellow-rgb: rgb(255, 170, 0); /* RGB value for Yellow */
+
+     /* Connacht - Dark Green */
+     --connacht-dark-green-hex: #00322D; /* HEX value for Dark Green */
+     --connacht-dark-green-rgb: rgb(0, 55, 45); /* RGB value for Dark Green */
+ 
+     /* Connacht - Bright Green */
+     --connacht-bright-green-hex: #00B446; /* HEX value for Bright Green */
+     --connacht-bright-green-rgb: rgb(0, 180, 70); /* RGB value for Bright Green */
+
+     /* Edinburgh - Dark Purple */
+    --edinburgh-dark-purple-hex: #1E144B; /* HEX value for Dark Purple */
+    --edinburgh-dark-purple-rgb: rgb(30, 20, 75); /* RGB value for Dark Purple */
+
+    /* Edinburgh - Orange */
+    --edinburgh-orange-hex: #F5461E; /* HEX value for Orange */
+    --edinburgh-orange-rgb: rgb(245, 70, 30); /* RGB value for Orange */
+
+    /* Zebre - Black */
+    --zebre-black-hex: #000000; /* HEX value for Black */
+    --zebre-black-rgb: rgb(0, 0, 0); /* RGB value for Black */
+
+    /* Zebre - Rhodamine Red */
+    --zebre-rhodamine-red-hex: #FF00C3; /* HEX value for Rhodamine Red */
+    --zebre-rhodamine-red-rgb: rgb(255, 0, 195); /* RGB value for Rhodamine Red */
+
+    /* Irish Conference - Dark Green */
+    --irish-conference-dark-green-hex: #003228; /* HEX value for Dark Green */
+    --irish-conference-dark-green-rgb: rgb(0, 50, 40); /* RGB value for Dark Green */
+
+    /* Irish Conference - Bright Green */
+    --irish-conference-bright-green-hex: #00B446; /* HEX value for Bright Green */
+    --irish-conference-bright-green-rgb: rgb(0, 180, 70); /* RGB value for Bright Green */
+
+    /* South African Conference - Dark Green */
+    --south-african-conference-dark-green-hex: #003228; /* HEX value for Dark Green */
+    --south-african-conference-dark-green-rgb: rgb(0, 50, 40); /* RGB value for Dark Green */
+
+    /* South African Conference - Gold */
+    --south-african-conference-gold-hex: #FFAA00; /* HEX value for Gold */
+    --south-african-conference-gold-rgb: rgb(255, 170, 0); /* RGB value for Gold */
+
+     /* Italian Scottish Conference - Dark Blue */
+     --italian-scottish-conference-dark-blue-hex: #001941; /* HEX value for Dark Blue */
+     --italian-scottish-conference-dark-blue-rgb: rgb(0, 25, 65); /* RGB value for Dark Blue */
+ 
+     /* Italian Scottish Conference - Bright Blue */
+     --italian-scottish-conference-bright-blue-hex: #0069E6; /* HEX value for Bright Blue */
+     --italian-scottish-conference-bright-blue-rgb: rgb(0, 105, 230); /* RGB value for Bright Blue */
+     /* Welsh Conference - Dark Red */
+    --welsh-conference-dark-red-hex: #460014; /* HEX value for Dark Red */
+    --welsh-conference-dark-red-rgb: rgb(70, 0, 20); /* RGB value for Dark Red */
+
+    /* Welsh Conference - Bright Red */
+    --welsh-conference-bright-red-hex: #EB322D; /* HEX value for Bright Red */
+    --welsh-conference-bright-red-rgb: rgb(235, 50, 45); /* RGB value for Bright Red */
+}
+
