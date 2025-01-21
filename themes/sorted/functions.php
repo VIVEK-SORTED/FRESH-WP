@@ -10,26 +10,8 @@ function sorted_theme_setup() {
 }
 add_action( 'after_setup_theme', 'sorted_theme_setup' );
 
-// Include ACF Clubs Settings
-// require_once get_template_directory() . '/includes/custom-dashboard.php';
-// require_once get_template_directory() . '/includes/content-settings.php';
-// require_once get_template_directory() . '/includes/marketing-settings.php';
-// require_once get_template_directory() . '/includes/admin-settings.php';
-// require_once get_template_directory() . '/includes/brand-settings.php';
-
-// function include_acf_dashboard_files() {
-//     $dashboard_path = get_template_directory() . '/acf-dashboard/';
-//     include_once $dashboard_path . 'content.php';
-//     include_once $dashboard_path . 'marketing.php';
-//     include_once $dashboard_path . 'admin.php';
-//     include_once $dashboard_path . 'brand.php';
-// }
-// add_action('init', 'include_acf_dashboard_files');
-
 // Include Custom Dashboard Files
-require_once get_template_directory() . '/custom-dashboard/enqueue-scripts.php';
-require_once get_template_directory() . '/custom-dashboard/dashboard-init.php';
-
-?>
-
-
+// require_once get_template_directory() . '/custom-dashboard/dashboard-init.php';
+// require_once get_template_directory() . '/custom-dashboard/enqueue-scripts.php';
+// Include the custom admin dashboard code
+require_once get_template_directory() . '/inc/admin-dashboard.php';
