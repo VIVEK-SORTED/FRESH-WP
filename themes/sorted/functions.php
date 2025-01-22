@@ -10,8 +10,7 @@ function sorted_theme_setup() {
 }
 add_action( 'after_setup_theme', 'sorted_theme_setup' );
 
-// Include Custom Dashboard Files
-// require_once get_template_directory() . '/custom-dashboard/dashboard-init.php';
-// require_once get_template_directory() . '/custom-dashboard/enqueue-scripts.php';
-// Include the custom admin dashboard code
-require_once get_template_directory() . '/inc/admin-dashboard.php';
+require_once get_template_directory() . '/inc/acf-options.php';
+
+?>
+
