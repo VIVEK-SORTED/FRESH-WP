@@ -99,3 +99,4 @@ function rename_post_to_article($labels) {
     return $labels;
 }
 add_filter('post_type_labels_post', 'rename_post_to_article');
+//23 jan 2025
