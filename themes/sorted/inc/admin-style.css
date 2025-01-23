@@ -1,0 +1,56 @@
+/* Style for Custom Admin Menus */
+
+/* Always display the submenus */
+#adminmenu .menu-top.toplevel_page_content-settings .wp-submenu,
+#adminmenu .menu-top.toplevel_page_admin-settings .wp-submenu {
+    display: block !important; /* Ensure submenus are always visible */
+    background-color: #f9f9f9; /* Light gray background for submenus */
+    border: 1px solid #e0e0e0; /* Border for submenus */
+    margin: 0;
+    padding: 0;
+}
+
+/* Main menu styling */
+#adminmenu .menu-top.toplevel_page_content-settings {
+    background-color: #007cba; /* Blue background for "Content" menu */
+    color: #ffffff; /* White text */
+}
+
+#adminmenu .menu-top.toplevel_page_admin-settings {
+    background-color: #444444; /* Dark gray background for "Admin" menu */
+    color: #ffffff; /* White text */
+}
+
+/* Submenu items styling */
+#adminmenu .wp-submenu li a {
+    color: #444444; /* Default text color */
+    text-decoration: none;
+    padding: 8px 20px; /* Padding for better spacing */
+    display: block;
+}
+
+#adminmenu .wp-submenu li a:hover {
+    background-color: #007cba; /* Blue background on hover */
+    color: #ffffff; /* White text on hover */
+}
+
+/* Highlight active submenu item */
+#adminmenu .wp-submenu li.current a {
+    background-color: #007cba; /* Blue background */
+    color: #ffffff; /* White text */
+    font-weight: bold;
+}
+
+/* Highlight active main menu item */
+#adminmenu .menu-top.current {
+    background-color: #005a8e; /* Darker blue for active main menu */
+    color: #ffffff;
+}
+
+/* Responsive tweaks */
+@media (max-width: 960px) {
+    #adminmenu .wp-submenu {
+        position: relative;
+        display: block !important; /* Always visible for smaller screens */
+    }
+}
