@@ -15,6 +15,11 @@ add_action('admin_menu', 'remove_default_menus', 999);
 
 // Add Content menu and submenus
 function add_content_menu_items() {
+    // add_menu_page(
+    //     'Content Settings', 'Content', 'manage_options', 'content-settings', 'render_content_settings_page',
+    //     'dashicons-admin-post', 5
+    // );
+
     add_submenu_page(
         'content-settings', 'Articles', 'Articles', 'manage_options',
         'edit.php?post_type=post', null
@@ -30,7 +35,6 @@ function add_content_menu_items() {
         'upload.php', null
     );
 
-    // Add custom submenu items
     add_submenu_page(
         'content-settings', 'Polls', 'Polls', 'manage_options',
         'poll-settings', 'render_poll_settings_page'
@@ -45,6 +49,11 @@ add_action('admin_menu', 'add_content_menu_items');
 
 // Add Admin menu and submenus
 function add_admin_menu_items() {
+    // add_menu_page(
+    //     'Admin', 'Admin', 'manage_options', 'admin-settings', 'render_admin_settings_page',
+    //     'dashicons-admin-generic', 6
+    // );
+
     add_submenu_page(
         'admin-settings', 'Plugins', 'Plugins', 'manage_options',
         'plugins.php', null
@@ -72,31 +81,28 @@ function add_admin_menu_items() {
 }
 add_action('admin_menu', 'add_admin_menu_items');
 
-// Callback for Polls submenu
+// Render content page
+function render_content_settings_page() {
+    echo '<div class="wrap"><h1>Content Settings</h1><p>Welcome to the Content Settings page.</p></div>';
+}
+
 function render_poll_settings_page() {
     echo '<div class="wrap"><h1>Poll Settings</h1><p>Manage poll-related settings here.</p></div>';
 }
 
-// Callback for Forms submenu
 function render_form_settings_page() {
     echo '<div class="wrap"><h1>Form Settings</h1><p>Manage form-related settings here.</p></div>';
 }
 
-// Rename "Posts" to "Articles"
-function rename_post_to_article($labels) {
-    if (isset($labels->name)) $labels->name = 'Articles';
-    if (isset($labels->singular_name)) $labels->singular_name = 'Article';
-    if (isset($labels->add_new)) $labels->add_new = 'Add New Article';
-    if (isset($labels->add_new_item)) $labels->add_new_item = 'Add New Article';
-    if (isset($labels->edit_item)) $labels->edit_item = 'Edit Article';
-    if (isset($labels->new_item)) $labels->new_item = 'New Article';
-    if (isset($labels->view_item)) $labels->view_item = 'View Article';
-    if (isset($labels->search_items)) $labels->search_items = 'Search Articles';
-    if (isset($labels->not_found)) $labels->not_found = 'No articles found';
-    if (isset($labels->not_found_in_trash)) $labels->not_found_in_trash = 'No articles found in Trash';
-    if (isset($labels->all_items)) $labels->all_items = 'All Articles';
-    if (isset($labels->menu_name)) $labels->menu_name = 'Articles';
-    return $labels;
+function render_admin_settings_page() {
+    echo '<div class="wrap"><h1>Admin Settings</h1><p>Welcome to the Admin Settings page.</p></div>';
 }
-add_filter('post_type_labels_post', 'rename_post_to_article');
-//23 jan 2025
+
+// Enqueue custom admin styles
+function enqueue_custom_admin_styles() {
+    wp_enqueue_style(
+        'custom-admin-style',
+        get_template_directory_uri() . '/inc/admin-menu-style.css'
+    );
+}
+add_action('admin_enqueue_scripts', 'enqueue_custom_admin_styles');
