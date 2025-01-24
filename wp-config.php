@@ -100,3 +100,10 @@ if ( ! defined( 'ABSPATH' ) ) {
 
 /** Sets up WordPress vars and included files. */
 require_once ABSPATH . 'wp-settings.php';
+// Set upload limits
+// Increase memory limit for WordPress uploads
+
+// Increase file upload limits
+@ini_set( 'upload_max_filesize', '64M' ); // Maximum upload size: 64MB
+@ini_set( 'post_max_size', '64M' ); // Maximum POST size: 64MB
+@ini_set( 'max_execution_time', '300' ); // Maximum execution time in seconds: 5 minutes
