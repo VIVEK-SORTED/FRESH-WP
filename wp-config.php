@@ -102,6 +102,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 require_once ABSPATH . 'wp-settings.php';
 // Set upload limits
 // Increase memory limit for WordPress uploads
+// define( 'UPLOADS', 'wp-content/uploads' );
 
 // Increase file upload limits
 @ini_set( 'upload_max_filesize', '64M' ); // Maximum upload size: 64MB
