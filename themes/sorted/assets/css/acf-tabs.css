@@ -1,0 +1,30 @@
+.acf-tab-menu {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+    border-bottom: 2px solid #ccc;
+}
+
+.acf-tab-link {
+    padding: 10px 20px;
+    cursor: pointer;
+    background: #f1f1f1;
+    border: 1px solid #ccc;
+    border-bottom: none;
+    margin-right: 5px;
+}
+
+.acf-tab-link.active {
+    background: #fff;
+    font-weight: bold;
+    border-top: 2px solid #0073aa;
+    border-left: 2px solid #0073aa;
+    border-right: 2px solid #0073aa;
+}
+
+.acf-field-group {
+    padding: 15px;
+    border: 1px solid #ccc;
+    background: #fff;
+}

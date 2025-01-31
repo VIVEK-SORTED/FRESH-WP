@@ -1,0 +1,16 @@
+/* Custom Admin Styles */
+body.wp-admin {
+    background-color: #f4f4f4;
+}
+
+#adminmenu {
+    background-color: #333;
+}
+
+#adminmenu li a {
+    color: white;
+}
+
+#adminmenu li a:hover {
+    color: #ff6600;
+}
